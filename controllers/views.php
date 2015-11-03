@@ -267,9 +267,9 @@
             //Khi login được click, nhờ action.php check auth
             var data = $(this).serialize();
             $.post('controllers/action.php', data, function(response){
-                $('#login-result').html(response);
+                $('#result').html(response);
 //                $('#check-fade-out').fadeOut();
-                $('#form-ajax-login').slideUp(500);
+                //$('#form-ajax-login').slideUp(500);
             });
         });
     </script>
