@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95b0a86a-068c-4bf6-ba8f-2d7374ed4554" name="Default" comment="" />
+    <list id="5ff5fb0d-42ea-4fd0-9414-5f8382f8522d" name="New changelist" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="CMS_PHP-Raw04-AJAX.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -27,8 +30,8 @@
       <file leaf-file-name="views.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/views.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="5960">
-              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="5013" max-vertical-offset="5960">
+              <caret line="261" column="12" selection-start-line="261" selection-start-column="12" selection-end-line="261" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -37,8 +40,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="320" max-vertical-offset="1460">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1460">
+              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -48,25 +51,35 @@
         <entry file="file://$PROJECT_DIR$/controllers/action.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="840">
-              <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+              <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2841596" vertical-offset="1085" max-vertical-offset="3600">
-              <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="2680">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding>
-                <marker date="1446550303699" expanded="true" signature="524:584" placeholder="INSERT INTO ..." />
-                <marker date="1446550303699" expanded="true" signature="786:847" placeholder="UPDATE php_r..." />
-                <marker date="1446550303699" expanded="true" signature="1008:1047" placeholder="DELETE FROM ..." />
-                <marker date="1446550303699" expanded="true" signature="1182:1236" placeholder="SELECT passw..php_raw02_user..." />
-                <marker date="1446550303699" expanded="true" signature="1385:1426" placeholder="SELECT * FRO..php_raw02_post..." />
-                <marker date="1446550303699" expanded="true" signature="1561:1597" placeholder="SELECT id, t..php_raw02_post..." />
+                <marker date="1446564518837" expanded="true" signature="524:584" placeholder="INSERT INTO ..." />
+                <marker date="1446564518837" expanded="true" signature="786:847" placeholder="UPDATE php_r..." />
+                <marker date="1446564518837" expanded="true" signature="1008:1047" placeholder="DELETE FROM ..." />
+                <marker date="1446564518837" expanded="true" signature="1182:1236" placeholder="SELECT passw..php_raw02_user..." />
+                <marker date="1446564518837" expanded="true" signature="1385:1426" placeholder="SELECT * FRO..php_raw02_post..." />
+                <marker date="1446564518837" expanded="true" signature="1561:1597" placeholder="SELECT id, t..php_raw02_post..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="802">
+              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,9 +104,10 @@
       <list>
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/controllers/functions.php" />
         <option value="$PROJECT_DIR$/controllers/action.php" />
         <option value="$PROJECT_DIR$/controllers/views.php" />
+        <option value="$PROJECT_DIR$/controllers/functions.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -228,6 +242,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="95b0a86a-068c-4bf6-ba8f-2d7374ed4554" name="Default" comment="" />
+      <changelist id="5ff5fb0d-42ea-4fd0-9414-5f8382f8522d" name="New changelist" comment="" />
       <created>1446534968907</created>
       <option name="number" value="Default" />
       <updated>1446534968907</updated>
@@ -238,12 +253,30 @@
       <option name="project" value="LOCAL" />
       <updated>1446563605031</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="change some function">
+      <created>1446564441485</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1446564441485</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove redudant">
+      <created>1446564532525</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1446564532525</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add gitignore">
+      <created>1446564753620</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1446564753620</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1535" height="916" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -287,7 +320,11 @@
     </option>
     <MESSAGE value="functions.php file" />
     <MESSAGE value="first commit, cms using AJAX" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit, cms using AJAX" />
+    <MESSAGE value="change some function" />
+    <MESSAGE value="chansadf" />
+    <MESSAGE value="remove redudant" />
+    <MESSAGE value="add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -323,12 +360,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1205" max-vertical-offset="3600">
           <caret line="167" column="41" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="41" />
           <folding>
-            <marker date="1446550303699" expanded="true" signature="524:584" placeholder="INSERT INTO ..." />
-            <marker date="1446550303699" expanded="true" signature="786:847" placeholder="UPDATE php_r..." />
-            <marker date="1446550303699" expanded="true" signature="1008:1047" placeholder="DELETE FROM ..." />
-            <marker date="1446550303699" expanded="true" signature="1182:1236" placeholder="SELECT passw..php_raw02_user..." />
-            <marker date="1446550303699" expanded="true" signature="1385:1426" placeholder="SELECT * FRO..php_raw02_post..." />
-            <marker date="1446550303699" expanded="true" signature="1561:1597" placeholder="SELECT id, t..php_raw02_post..." />
+            <marker date="1446564518837" expanded="true" signature="524:584" placeholder="INSERT INTO ..." />
+            <marker date="1446564518837" expanded="true" signature="786:847" placeholder="UPDATE php_r..." />
+            <marker date="1446564518837" expanded="true" signature="1008:1047" placeholder="DELETE FROM ..." />
+            <marker date="1446564518837" expanded="true" signature="1182:1236" placeholder="SELECT passw..php_raw02_user..." />
+            <marker date="1446564518837" expanded="true" signature="1385:1426" placeholder="SELECT * FRO..php_raw02_post..." />
+            <marker date="1446564518837" expanded="true" signature="1561:1597" placeholder="SELECT id, t..php_raw02_post..." />
           </folding>
         </state>
       </provider>
@@ -354,42 +391,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/views.php">
+    <entry file="file://$PROJECT_DIR$/controllers/action.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="5960">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="840">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1460">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1460">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/action.php">
+    <entry file="file://$PROJECT_DIR$/controllers/views.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5013" max-vertical-offset="5960">
+          <caret line="261" column="12" selection-start-line="261" selection-start-column="12" selection-end-line="261" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2841596" vertical-offset="1085" max-vertical-offset="3600">
-          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="2680">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
           <folding>
-            <marker date="1446550303699" expanded="true" signature="524:584" placeholder="INSERT INTO ..." />
-            <marker date="1446550303699" expanded="true" signature="786:847" placeholder="UPDATE php_r..." />
-            <marker date="1446550303699" expanded="true" signature="1008:1047" placeholder="DELETE FROM ..." />
-            <marker date="1446550303699" expanded="true" signature="1182:1236" placeholder="SELECT passw..php_raw02_user..." />
-            <marker date="1446550303699" expanded="true" signature="1385:1426" placeholder="SELECT * FRO..php_raw02_post..." />
-            <marker date="1446550303699" expanded="true" signature="1561:1597" placeholder="SELECT id, t..php_raw02_post..." />
+            <marker date="1446564518837" expanded="true" signature="524:584" placeholder="INSERT INTO ..." />
+            <marker date="1446564518837" expanded="true" signature="786:847" placeholder="UPDATE php_r..." />
+            <marker date="1446564518837" expanded="true" signature="1008:1047" placeholder="DELETE FROM ..." />
+            <marker date="1446564518837" expanded="true" signature="1182:1236" placeholder="SELECT passw..php_raw02_user..." />
+            <marker date="1446564518837" expanded="true" signature="1385:1426" placeholder="SELECT * FRO..php_raw02_post..." />
+            <marker date="1446564518837" expanded="true" signature="1561:1597" placeholder="SELECT id, t..php_raw02_post..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="802">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
