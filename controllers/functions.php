@@ -67,53 +67,7 @@ function makeStatement ( $sql, $data = null ){
     }
     return $statement;
 } ?>
-<?php function submitAJAX($formID) { ?>
-    <script>
-//        var submit = "<?php //global $loginStatus; echo $loginStatus; ?>//";
-//        console.log(submit);
-        $(document).ready(function(){
-//            console.log("inside form submit");
-//            $("#"+formID).submit();
-////            var title = "<?php ////echo $_POST['title']; ?>////";
-////            console.log(title);
-            var formID = "<?php echo $formID; ?>";
-            console.log(formID);
-            $("#"+formID).submit(function(e){
-                    e.preventDefault();
-                    var response = $.post("save-post.php").responseText;
-                    $("#result").text(response);
-            });
-        });
-        function ajax(){
-            var url = "save-post.php"; // the script where you handle the form input.
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: $("#idForm").serialize()// serializes the form's elements.
-                success:function(data){
-                    alert('This was sent back: ' + data);
-                }
-            });
-//            e.preventDefault(); // avoid to execute the actual submit of the form.
-        }
-    </script>
-<?php } ?>
 
-<?php function getGlobalVariable($field, $method = "post"){
-    if( $method == "post" ){
-        if(isset($_POST[$field])){
-            return $_POST[$field];
-        }else {
-            return "nothing";
-        }
-    }else {
-        if(isset($_GET[$field])){
-            return $_GET[$field];
-        }else {
-            return false;
-        }
-    }
-} ?>
 <?php function POST($field) {
     if(isset($_POST[$field])){
         return $_POST[$field];
