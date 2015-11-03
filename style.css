@@ -1,0 +1,48 @@
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+/*table*/
+#post-table {
+    height: 500px;
+    overflow: hidden;
+}
+#post-list{
+    overflow: scroll;
+    height: 520px;
+}
+#post-list ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#post-list ul li{
+    border-bottom:solid 1px #EEEEEE;
+    padding: 20px 0;
+    margin: 0;
+}
+#post-info {
+    overflow: scroll;
+    height: 520px;
+}
+#edit-post {
+    position: absolute;
+    top:450px;
+    right:50px;
+}
+a {
+    text-decoration: none !important;
+    color: #333333;
+}
+.input-group {
+	margin-bottom: 10px;
+}
+
+h2, h3 {
+	margin-top: 0px !important;
+}
+
+#create-post-form *{
+	display: inline-block;
+}
+
