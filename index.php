@@ -25,14 +25,19 @@
             <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#<?php global $modalLoginID; $modalLoginID = "modal-login"; echo $modalLoginID; ?>"><span class="glyphicon glyphicon-plus"></span></button>
         </form>
         <?php preventSubmitEvent("form-ajax_create-post"); ?>
-        <div id="result"></div>
+
         <?php //Nếu $_SESSION['login'] === false > load 'modal-login' ở đây luôn
         if(SESSION('login') === false){
-            global $modalLoginID;
-            modalLogin($modalLoginID);
-        } else{
-            sendData2Action("form-ajax_create-post");
+            global $modalLoginID; ?>
+            <div id="result">
+                <?php modalLogin($modalLoginID); ?>
+            </div>
+        <?php } else{ ?>
+            <div id="result"></div>
+            <?php sendData2Action("form-ajax_create-post");
+
         } ?>
+        <div id="result02"></div>
         <hr>
         <div class="row" id="post-table">
 			<div class="col-md-4" id="post-list">

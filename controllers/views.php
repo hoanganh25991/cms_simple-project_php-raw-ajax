@@ -37,19 +37,10 @@
     <script type="text/javascript">
         $(document).ready(function(){
             //var modalLogin = "<?php global $modalLoginID; echo $modalLoginID; ?>";
-            if( $('#modal-login').length){
-                $(this).on('hidden.bs.modal', function(){
-                    var modalName = "<?php echo $modalName; ?>";
-                    $("#" + modalName).modal('show').on('hidden.bs.modal', function () {
-                        window.location.reload();
-                    })
-                })
-            }else{
-                var modalName = "<?php echo $modalName; ?>";
-                $("#" + modalName).modal('show').on('hidden.bs.modal', function () {
-                    window.location.reload();
-                })
-            }
+            var modalName = "<?php echo $modalName; ?>";
+            $("#" + modalName).modal('show').on('hidden.bs.modal', function () {
+                window.location.reload();
+            })
         });
     </script>
 <?php } ?>
@@ -267,7 +258,7 @@
             //Khi login được click, nhờ action.php check auth
             var data = $(this).serialize();
             $.post('controllers/action.php', data, function(response){
-                $('#result').html(response);
+                $('#result02').html(response);
 //                $('#check-fade-out').fadeOut();
                 //$('#form-ajax-login').slideUp(500);
             });
