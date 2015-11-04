@@ -103,8 +103,8 @@ function makeStatement ( $sql, $data = null ){
             var formID = "<?php echo $formID; ?>";
             $('#' + formID).submit(function(e){
                 e.preventDefault();
-                window.data = $(this).serialize();
-                console.log(window.data);
+                window.dataSerialize = $(this).serialize();
+                console.log(window.dataSerialize);
             });
         });
     </script>
@@ -116,9 +116,9 @@ function makeStatement ( $sql, $data = null ){
         var formID = "<?php echo $formID; ?>";
         $('#' + formID).submit(function(e){
             e.preventDefault();
-            window.data = $(this).serialize();
-            console.log(window.data);
-            $.post("controllers/action.php", window.data, function(response){
+            window.dataSerialize = $(this).serialize();
+            console.log(window.dataSerialize);
+            $.post("controllers/action.php", window.dataSerialize, function(response){
                 $('#result').html(response);
             })
         });

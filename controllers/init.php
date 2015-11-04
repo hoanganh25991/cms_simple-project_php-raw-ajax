@@ -2,7 +2,7 @@
 //require_once "functions.php";
 //require_once "./models/PageData.class.php";
 //requireFile("models", "PageData.class.php");
-//----------init: database, session, pggae-data
+//----------init: database, session, pggae-dataSerialize
 //session
 session_start();
 //database
