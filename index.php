@@ -178,32 +178,9 @@
                     <?php } ?>
                 </ul>
                 <script>
-                    $(function(){
-                        $('#post-list').find('li').click(function(){
-                            var postTitle = $(this).html();
-                            console.log(postTitle);
-                            var postID = this.id;
-                            var dataSend = "submit=read&id=" + postID;
-                            console.log(dataSend);
-                            //modify ACTION-update|delete on Page with list-item ID
-                            $('#edit-post').find('input[name="id"]').val(postID);
-                            //modify for modal update post
-                            var modalUpdatePost = $('#modal-update-post');
-                            modalUpdatePost.find('input[name="title"]').val($.trim(postTitle));
-                            modalUpdatePost.find('input[name="id"]').val(postID);
-                            //modify modal delete confirm
-                            $('#modal-delete-confirm').find('input[name="id"]').val(postID);
-                            //addClass cho list-item 'selected'
-                            $(this).siblings().find(".selected").removeClass("selected");
-                            $(this).addClass("selected");
-                            $.post('controllers/action.php', dataSend, function(response){
-                                var postInfo = '<h4>' + postTitle + '</h4>' + '<p>' + response + '</p>';
-                                $('#post-info').html(postInfo);
-                                //right after we have post-content from response, update it to modal-update-post
-                                modalUpdatePost.find('input[name="content"]').val(response);
-                            });
-                        });
-                    });
+
+
+
                 </script>
                 <script>
                     /*
@@ -212,21 +189,9 @@
                      |--------------------------------------------------------------------------
                      | Search title, list sorted.
                      */
-                    $(function(){
-                        $('.live-search-list li').each(function(){
-                            $(this).attr('data-search-term', $(this).text().toLowerCase());
-                        });
-                        $('.live-search-box').on('keyup', function(){
-                            var searchTerm = $(this).val().toLowerCase();
-                            $('.live-search-list li').each(function(){
-                                if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
-                                    $(this).show();
-                                } else {
-                                    $(this).hide();
-                                }
-                            });
-                        });
-                    });
+
+
+
                 </script>
                 <div id="tabs">
                     <ul>
@@ -392,7 +357,44 @@
                 }
                 //for READ (no need LOGIN AUTH)
             }
-        })
+        });
+        $('#post-list').find('li').click(function(){
+            var postTitle = $(this).html();
+            console.log(postTitle);
+            var postID = this.id;
+            var dataSend = "submit=read&id=" + postID;
+            console.log(dataSend);
+            //modify ACTION-update|delete on Page with list-item ID
+            $('#edit-post').find('input[name="id"]').val(postID);
+            //modify for modal update post
+            var modalUpdatePost = $('#modal-update-post');
+            modalUpdatePost.find('input[name="title"]').val($.trim(postTitle));
+            modalUpdatePost.find('input[name="id"]').val(postID);
+            //modify modal delete confirm
+            $('#modal-delete-confirm').find('input[name="id"]').val(postID);
+            //addClass cho list-item 'selected'
+            $(this).siblings().find(".selected").removeClass("selected");
+            $(this).addClass("selected");
+            $.post('controllers/action.php', dataSend, function(response){
+                var postInfo = '<h4>' + postTitle + '</h4>' + '<p>' + response + '</p>';
+                $('#post-info').html(postInfo);
+                //right after we have post-content from response, update it to modal-update-post
+                modalUpdatePost.find('input[name="content"]').val(response);
+            });
+        });
+        $('.live-search-list li').each(function(){
+            $(this).attr('data-search-term', $(this).text().toLowerCase());
+        });
+        $('.live-search-box').on('keyup', function(){
+            var searchTerm = $(this).val().toLowerCase();
+            $('.live-search-list li').each(function(){
+                if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
     </script>
 </div>
 </body>
