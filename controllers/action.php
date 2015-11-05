@@ -21,9 +21,32 @@ if(POST('submit') == 'login'){
     }
 }
 if(POST('submit') == 'create'){
-    $title = POST("title");
-    $content = POST("content");
+    $title = POST('title');
+    $content = POST('content');
     $statement = savePost2Database($title, $content);
-    $return = '{"status": "1", "id": "'.$statement.'"}';
-    echo $return;
+    //echo '{"status": "1", "id": "'.$statement.'","title": "'.$title.'"}';
+    echo '{"status": "1", "id": "'.$statement.'"}';
+}
+if(POST('submit') == 'read'){
+    $id = POST('id');
+    $statement = getPost($id);
+    $post = $statement->fetchObject();
+    if($post){
+        $content = $post->content;
+        echo $content;
+    }else{
+        echo "No post with ID: $id";
+    }
+}
+if(POST('submit') == 'update'){
+    $id = POST('id');
+    $title = POST('title');
+    $content = POST('content');
+    $statement = updatePost($title, $content, $id);
+    echo "{'status': '1'}";
+}
+if(POST('submit') == 'delete'){
+    $id = POST('id');
+    deletePost($id);
+    echo '{"status": "1"}';
 }

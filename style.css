@@ -2,305 +2,32 @@
     max-width: 700px;
     margin: 0 auto;
 }
-/*table*/
-#post-table {
-    height: 500px;
-    overflow: hidden;
-}
-#post-list{
-    overflow: scroll;
-    height: 520px;
-}
-/*#post-list ul{*/
-    /*padding: 0;*/
-    /*margin: 0;*/
-    /*list-style-type: none;*/
-/*}*/
-/*#post-list ul li{*/
-    /*border-bottom:solid 1px #EEEEEE;*/
-    /*padding: 20px 0;*/
-    /*margin: 0;*/
-/*}*/
-#post-info {
-    overflow: scroll;
-    height: 520px;
-}
+
 #edit-post {
     position: absolute;
-    top:450px;
-    right:50px;
-}
-/*a {*/
-    /*text-decoration: none !important;*/
-    /*color: #333333;*/
-/*}*/
-.input-group {
-	margin-bottom: 10px;
+    right: 50px;
+    top: 0;
 }
 
-h2, h3 {
-	margin-top: 0px !important;
+#tabs ul {
+    margin-left: 0;
+    padding-left: 0;
+    display: inline;
+} #tabs ul li {
+      margin-left: 0;
+      margin-bottom: 0;
+      padding: 2px 15px 5px;
+      border: 1px solid #000;
+      list-style: none;
+      display: inline;
+  }
+
+
+#tabs ul li.here {
+    border-bottom: 1px solid #ffc;
+    list-style: none;
+    display: inline;
 }
-
-#create-post-form *{
-	display: inline-block;
-}
-
-/*.live-search-list {*/
-    /*box-sizing: border-box;*/
-    /*padding: 1em;*/
-    /*background-color: #2c3e50;*/
-    /*border-radius: 5px;*/
-    /*font-family: 'Lato', sans-serif;*/
-    /*color: black;*/
-/*}*/
-
-/*.live-search-box {*/
-    /*width: 100%;*/
-    /*display: block;*/
-    /*padding: 1em;*/
-    /*box-sizing: border-box;*/
-    /*border: 1px solid #3498db;*/
-    /*border-radius: 5px;*/
-
-/*}*/
-
-/*.live-search-list li {*/
-    /*color: black;*/
-    /*list-style: none;*/
-    /*padding: 0;*/
-    /*margin: 5px 0;*/
-/*}*/
-
-h2 {
-    font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    font: 200 1em/1.5 Helvetica, Verdana, sans-serif;
-    border-bottom: 1px solid #ccc;
-}
-
-li:last-child {
-    border: none;
-}
-
-li a {
-    text-decoration: none;
-    color: #000;
-    display: block;
-    width: 200px;
-    transition: font-size 0.2s ease, background-color 0.2s ease;
-}
-
-li a:hover {
-    font-size: 2em;
-    background: #f6f6f6;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    float: left;
-    overflow: hidden;
-}
-ul li {
-    clear: both;
-    overflow:hidden;
-    position:relative;
-    margin: 0px;
-    padding: 0px;
-
-    border-bottom: 1px solid #bbb;  /* appears at the top instead of bottom */
-}
-ul li a {
-    padding: 15px 20px;
-    margin: 0px;
-    float: left;
-}
-ul li a div {
-    margin: 0;
-    padding: 0px;
-    width: 80%;
-    float: left;
-    display: block;
-
-}
-ul li a div span.label {
-    font-size: 15px;
-    font-weight: normal;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-ul li a div span.subtext {
-    margin-left: 10px;
-    color: #067ab4;
-    font-size: 14px;
-    font-weight: normal;
-    white-space: nowrap;
-    text-overflow: ellipsis;    /* always overlaps instead of showing ellipses on short widths */
-}
-.button{
-    width:50px;
-    height:100%;
-    position:absolute;
-    right:0;
-    background:url('http://www.fmf.com.au/app/webroot/uploads/knife_images/99_60mm_circle_gray.jpg') no-repeat right 10px center;
-    z-index:-1;
-}
-
-ol {
-    counter-reset: li; /* Initiate a counter */
-    list-style: none; /* Remove default numbering */
-    /*list-style: decimal; /* Keep using default numbering for IE6/7 */
-    font: 15px 'trebuchet MS', 'lucida sans';
-    padding: 0;
-    margin-bottom: 4em;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-}
-
-ol ol {
-    margin: 0 0 0 2em; /* Add some left margin for inner lists */
-}
-
-.rounded-list a{
-    position: relative;
-    display: block;
-    padding: .4em .4em .4em 2em;
-    /*padding: .4em;*/
-    margin: .5em 0;
-    background: #ddd;
-    color: #444;
-    text-decoration: none;
-    border-radius: .3em;
-    transition: all .3s ease-out;
-}
-
-.rounded-list a:hover{
-    background: #eee;
-}
-
-.rounded-list a:hover:before{
-    transform: rotate(360deg);
-}
-
-.rounded-list a:before{
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    left: -1.3em;
-    top: 50%;
-    margin-top: -1.3em;
-    background: #87ceeb;
-    height: 2em;
-    width: 2em;
-    line-height: 2em;
-    border: .3em solid #fff;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 2em;
-    transition: all .3s ease-out;
-}
-
-.rectangle-list a{
-    position: relative;
-    display: block;
-    padding: .4em .4em .4em .8em;
-    /*padding: .4em; */
-    margin: .5em 0 .5em 2.5em;
-    background: #ddd;
-    color: #444;
-    text-decoration: none;
-    transition: all .3s ease-out;
-}
-
-.rectangle-list a:hover{
-    background: #eee;
-}
-
-.rectangle-list a:before{
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    left: -2.5em;
-    top: 50%;
-    margin-top: -1em;
-    background: #fa8072;
-    height: 2em;
-    width: 2em;
-    line-height: 2em;
-    text-align: center;
-    font-weight: bold;
-}
-
-.rectangle-list a:after{
-    position: absolute;
-    content: '';
-    border: .5em solid transparent;
-    left: -1em;
-    top: 50%;
-    margin-top: -.5em;
-    transition: all .3s ease-out;
-}
-
-.rectangle-list a:hover:after{
-    left: -.5em;
-    border-left-color: #fa8072;
-}
-
-.circle-list li{
-    padding: 2.5em;
-    border-bottom: 1px dashed #ccc;
-}
-
-.circle-list h2{
-    position: relative;
-    margin: 0;
-}
-
-.circle-list p{
-    margin: 0;
-}
-
-.circle-list h2:before{
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    z-index: -1;
-    left: -1.3em;
-    top: -.8em;
-    background: #f5f5f5;
-    height: 1.5em;
-    width: 1.5em;
-    border: .1em solid rgba(0,0,0,.05);
-    text-align: center;
-    font: italic bold 1em/1.5em Georgia, Serif;
-    color: #ccc;
-
-    border-radius: 1.5em;
-
-    transition: all .2s ease-out;
-}
-
-.circle-list li:hover h2:before{
-    background-color: #ffd797;
-    border-color: rgba(0,0,0,.08);
-    border-width: .2em;
-    color: #444;
-
-    transform: scale(1.5);
+#post-table{
+    max-height: 500px;
 }

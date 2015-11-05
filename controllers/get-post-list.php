@@ -1,8 +1,12 @@
 <?php
-require_once "functions.php";
 $statement = getAllPosts(); ?>
 <ul>
     <?php while( $post = $statement->fetchObject() ) { ?>
-        <li id="<?php echo $post->id; ?>"><a href="index.php?id=<?php echo $post->id; ?>"><?php echo $post->title; ?></a></li>
+        <li id="<?php echo $post->id; ?>">
+            <form method="post" class="form-ajax">
+                <input type="hidden" name="submit" value="read"/>
+                <button class="btn btn-default"><?php echo $post->title; ?></button>
+            </form>
+        </li>
     <?php } ?>
 </ul>
